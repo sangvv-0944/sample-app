@@ -17,3 +17,8 @@
 /yarn-error.log
 
 .byebug_history
+
+# ignore spring test
+spring/
+# ignore database
+config/database.yml
