@@ -224,6 +224,7 @@ Naming/FileName:
     - '**/Rakefile'
     - '**/Gemfile'
     - '**/Capfile'
+    - '**/Guardfile'
 
 # Checks use of for or each in multiline loops.
 Style/For:

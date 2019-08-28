@@ -31,3 +31,23 @@
 
 en:
   hello: "Hello world"
+  title_web: "Ruby on Rails Tutorial Sample App"
+  static_pages:
+    RoR: "Ruby On Rails"
+    home:
+      home_title: "Home"
+      home_heading: "Sample app"
+      home_content: "This is a home page for the Rails Tutorial"
+    help:
+      help_title: "Help"
+      link_message_html: 'Rails tutorial help
+      <a href="https://www.railstutorial.org/help">Ruby on Rails</a>,
+      and <a href="#">google.com</a>'
+    about:
+      about_title: "About"
+      about_content: "We are human"
+    contact:
+      contact_title: "Contact"
+      contact_content_html: '
+      Contact the Ruby on Rails Tutorial about the sample app at the
+      <a href="https://www.railstutorial.org/contact"> contact page</a>.'
