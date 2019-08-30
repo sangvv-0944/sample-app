@@ -9,3 +9,8 @@ hour_expried_reset: 2
 per_page_post: 10
 max_size_picture: 1
 max_mipost_content: 140
+per_page_post: 10
+per_page_following: 10
+per_page_followers: 10
+avatar_size_sidebar: 30
+extention_img_allow: "image/jpeg,image/gif,image/png"

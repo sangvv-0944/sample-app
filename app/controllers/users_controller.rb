@@ -48,6 +48,20 @@ class UsersController < ApplicationController
     redirect_to users_url
   end
 
+  def following
+    @title = t("button_app.folowing").capitalize
+    @users = @user.following.paginate(page: params[:page],
+      per_page: Settings.per_page_following)
+    render "show_follow"
+  end
+
+  def followers
+    @title = t("button_app.followers").capitalize
+    @users = @user.followers.paginate(page: params[:page],
+      per_page: Settings.per_page_followers)
+    render "show_follow"
+  end
+
   private
 
   def user_params

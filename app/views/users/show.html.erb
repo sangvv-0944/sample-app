@@ -10,9 +10,11 @@
         <li><%= t("profile_page.email_info", email_user: @user.email) %></li>
         <li><%= t("profile_page.joined_date", joined_date: l(@user.created_at)) %> </li>
       </ul>
+      <%= render "shared/stats" %>
     </section>
   </aside>
   <div class="col-md-8">
+    <%= render "follow_form" if logged_in? %>
     <% if @user.microposts.any? %>
       <h3><%= t("micropost_page.count_micropost",
         number_micropost: @user.microposts.size) %></h3>
@@ -20,6 +22,8 @@
         <%= render @microposts %>
       </ol>
       <%= will_paginate @microposts %>
+    <% else %>
+      <div class="no-post"><%= t("follow_page.no_post") %></div>
     <% end %>
   </div>
 </div>
