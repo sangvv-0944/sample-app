@@ -105,6 +105,17 @@ aside {
   margin-top: 15px;
 }
 
+// Users index
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: hidden;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
+}
+
 // Form
 input, textarea, select, .unedittable_edit {
   border: 1px solid $gray-b;

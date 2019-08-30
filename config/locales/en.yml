@@ -91,8 +91,17 @@ en:
   signin_page:
     question_text: "New user?"
     fail_account: "Invalid email/password combination"
-    content_button: "Create my account"
-  signin_page:
-    question_text: "New user?"
-    fail_account: "Invalid email/password combination"
     remember_me: "Remember me on this computer"
+    required_login: "Please log in!"
+  profile_pages:
+    title: "Edit user"
+    heading_1: "Update your profile"
+    button_save: "Save changes"
+    link_change: "Change"
+    href_gravatar: "http://gravatar.com/emails"
+    profile_updated: "Profile updated"
+    delete_success: "User deleted"
+    user_notfound: "User not found"
+    user_delete_fails: "Delete fail"
+  users_page:
+    title: "All users"
