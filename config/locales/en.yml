@@ -32,18 +32,31 @@
 en:
   hello: "Hello world"
   title_web: "Ruby on Rails Tutorial Sample App"
+  title_logo: "Sample app"
+  header:
+    home: "Home"
+    help: "Help"
+    login: "Login"
+  footer:
+    content_footer_html: "The %{link_tuts} by %{link_author}"
+    tuts_content: "Ruby on Rails Tutorial"
+    href_tuts: "https://railstutorial.org"
+    author_content: "Michael Hartl"
+    href_author: "https://michaelhartl.com"
+    news_content: "News"
+    news_href: "https://news.railstutorial.org"
   static_pages:
     RoR: "Ruby On Rails"
     home:
       home_title: "Home"
-      home_heading: "Sample app"
+      home_heading: "Welcome to Sample app"
       home_content: "This is a home page for the Rails Tutorial"
+      button_signup: "Sign up now!"
     help:
       help_title: "Help"
       link_message_html: "Rails tutorial help
       %{link_help} and %{link_google}"
       help_href: "Ruby on Rails"
-      google_href: "google.com"
     about:
       about_title: "About"
       about_content: "We are human"
@@ -53,3 +66,6 @@ en:
       Contact the Ruby on Rails Tutorial about the sample app
       at the %{link_contact}"
       contact_href: "contact page"
+  signup_page:
+    title: "Sign up"
+    signup_content: "This will be a signup page for new users"
