@@ -42,6 +42,12 @@ en:
     home: "Home"
     help: "Help"
     login: "Login"
+    dropdown:
+      setting: "Settings"
+      profile: "Profile"
+      logout: "Logout"
+      user: "Users"
+      account: "Account"
   footer:
     content_footer_html: "The %{link_tuts} by %{link_author}"
     tuts_content: "Ruby on Rails Tutorial"
@@ -82,3 +88,6 @@ en:
   profile_page:
     email_info: "Email: %{email_user}"
     joined_date: "Joined date: %{joined_date}"
+  signin_page:
+    question_text: "New user?"
+    fail_account: "Invalid email/password combination"
