@@ -1,0 +1,16 @@
+<% provide(:title, @user.name) %>
+<div class="row">
+  <aside class="col-md-4">
+    <section class="user_info">
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+      <ul>
+        <li> <%= t("profile_page.email_info", email_user: @user.email) %></li>
+        <li><%= t("profile_page.joined_date", joined_date: l(@user.created_at)) %> </li>
+      </ul>
+    </section>
+  </aside>
+</div>
+

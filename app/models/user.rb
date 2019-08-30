@@ -6,6 +6,7 @@ class User < ApplicationRecord
             presence: true, length: {maximum: Settings.max_email},
             uniqueness: {case_sensitive: false}
   validates :password, presence: true, length: {minimum: Settings.min_password}
+  validates :password_confirmation, presence: true
 
   before_save{email.downcase!}
 
