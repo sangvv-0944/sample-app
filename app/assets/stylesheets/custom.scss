@@ -115,6 +115,19 @@ span.picture {
 aside {
   section.user_info {
     margin-top: 20px;
+    .info {
+      float: left;
+      display: inline-block;
+      width: 45%;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 25px;
+      strong{
+        display: block;
+      }
+    }
     ul {
       margin: 0;
       list-style: none;
@@ -187,6 +200,7 @@ input {
   width: auto;
   margin-left: 0;
 }
+
 // Hightlight error
 #error_explanation {
   color: $red-color;
@@ -201,6 +215,18 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+// No post
+.no-post {
+  margin-top: 20px;
+  background: $green_light;
+  height: 150px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
 }
 
 // Footer
