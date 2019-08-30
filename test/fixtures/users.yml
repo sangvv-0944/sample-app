@@ -3,25 +3,35 @@ sangvo:
   email: "sangvo111@gmail.com"
   password_digest: <%= User.digest("123456") %>
   admin: true
+  activated: true
+  activated_at: <%= Time.now %>
 
 vitcon:
   name: "Quac"
   email: "dev@google.com"
   password_digest: <%= User.digest("123456") %>
+  activated: true
+  activated_at: <%= Time.now %>
 
 kendy:
   name: "Kelvin Ac"
   email: "hands@example.gov"
   password_digest: <%= User.digest("123456") %>
+  activated: true
+  activated_at: <%= Time.now %>
 
 swept:
   name: "Malory Archer"
   email: "boss@example.gov"
   password_digest: <%= User.digest("123456") %>
+  activated: true
+  activated_at: <%= Time.now %>
 
 <% 30.times do |n| %>
 user_<%= n %>:
   name:  <%= "User #{n}" %>
   email: <%= "user-#{n}@test.com" %>
   password_digest: <%= User.digest("123456") %>
+  activated: true
+  activated_at: <%= Time.now %>
 <% end %>

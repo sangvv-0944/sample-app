@@ -82,6 +82,7 @@ en:
     signup_content: "This will be a signup page for new users"
     button_create: "Create my account"
     lable_comfirm: "Confirmation"
+    message_email: "Please check your email to activate your account."
   error_count:
     one: "The form contains %{count} error"
     other: "The form contains %{count} errors"
@@ -93,6 +94,9 @@ en:
     fail_account: "Invalid email/password combination"
     remember_me: "Remember me on this computer"
     required_login: "Please log in!"
+    message_activation: "Account not activated.
+    check your email for the activation link."
+    forgot_password: "(forgot password)"
   profile_pages:
     title: "Edit user"
     heading_1: "Update your profile"
@@ -100,8 +104,33 @@ en:
     link_change: "Change"
     href_gravatar: "http://gravatar.com/emails"
     profile_updated: "Profile updated"
-    delete_success: "User deleted"
-    user_notfound: "User not found"
-    user_delete_fails: "Delete fail"
   users_page:
     title: "All users"
+    delete_message: "User deleted"
+    confirm_delete: "You sure?"
+  actived_page:
+    success: "Account activated!"
+    invalid_message: "Invalid activation link"
+  forgot_page:
+    title: "Forgot password"
+    sent_link: "Email sent with password reset instructions"
+    invalid_email: "Email address not found"
+    blank_pass: "can't be empty"
+    done_reset: "Password has been reset"
+    password_expired: "Password reset has exprired"
+  user_mailer:
+    hi_message: "Hi %{user_name}"
+    activate_account: "Welcome to the Sample App! Click on the link below to
+      activate your account:"
+    activate: "Activate"
+    password_reset: "Password reset"
+  micropost_page:
+    posted_create: "Micropost created!"
+    posted_delete: "Micropost deleted"
+    placeholder_post: "Compose new micropost ..."
+    post: "Post"
+    deleted_fail: "Micropost delete fail"
+    time_posted: "Posted %{time_ago} ago"
+  button_app:
+    submit: "Submit"
+    delete: "Delete"
