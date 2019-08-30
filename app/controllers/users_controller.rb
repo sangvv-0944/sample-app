@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: [:show, :new, :create]
+  before_action :logged_in_user, except: [:new, :create]
   before_action :load_user, except: [:index, :new, :create]
   before_action :correct_user, only: [:edit, :update]
   before_action :admin_user, only: :destroy
@@ -8,7 +8,10 @@ class UsersController < ApplicationController
     @users = User.paginate page: params[:page], per_page: Settings.per_page_user
   end
 
-  def show; end
+  def show
+    @microposts = @user.microposts.paginate(page: params[:page],
+      per_page: Settings.per_page_post)
+  end
 
   def new
     @user = User.new
@@ -50,13 +53,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user)
           .permit :name, :email, :password, :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "signin_page.required_login"
-    redirect_to login_url
   end
 
   def correct_user

@@ -63,6 +63,7 @@ en:
       home_heading: "Welcome to Sample app"
       home_content: "This is a home page for the Rails Tutorial"
       button_signup: "Sign up now!"
+      heading_micropost: "Micropost Feed"
     help:
       help_title: "Help"
       link_message_html: "Rails tutorial help
@@ -104,6 +105,7 @@ en:
     link_change: "Change"
     href_gravatar: "http://gravatar.com/emails"
     profile_updated: "Profile updated"
+    user_notfound: "User not found"
   users_page:
     title: "All users"
     delete_message: "User deleted"
@@ -127,6 +129,8 @@ en:
     pass_reset_content: "To reset your password click on the link below:"
     content_reset: "Reset password"
     time_expried: "This link will expire in two hours."
+    password_reset_subject: "Password reset"
+    account_active_subject: "Account activation"
   micropost_page:
     posted_create: "Micropost created!"
     posted_delete: "Micropost deleted"
@@ -134,7 +138,21 @@ en:
     post: "Post"
     deleted_fail: "Micropost delete fail"
     time_posted: "Posted %{time_ago} ago"
+    count_micropost: "Micropost (%{number_micropost})"
+    need_permision: "You need permission to perform this action"
+  user_info:
+    view_profile: "View my profile"
+  count_micropost:
+    one: "%{count} micropost"
+    other: "%{count} microposts"
+  follow_page:
+    no_post: "No micropost yet!"
   button_app:
     submit: "Submit"
     delete: "Delete"
     update_pass: "Update password"
+  invalid_file:
+    message_file_max: "Maximum file size is 5MB. Please choose a smaller file"
+  button_app:
+    submit: "Submit"
+    delete: "Delete"

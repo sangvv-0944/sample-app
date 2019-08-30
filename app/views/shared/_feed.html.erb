@@ -1,0 +1,10 @@
+<% if @feed_items.any? %>
+  <ol class="microposts">
+    <%= render @feed_items %>
+  </ol>
+  <%= will_paginate @feed_items %>
+  <% else %>
+  <div class="no-post">
+    <%= t("follow_page.no_post") %>
+  </div>
+<% end %>

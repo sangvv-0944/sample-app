@@ -6,3 +6,6 @@ avatar_size_min: 50
 remember_me: "1"
 per_page_user: 20
 hour_expried_reset: 2
+per_page_post: 10
+max_size_picture: 1
+max_mipost_content: 140
