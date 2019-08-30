@@ -40,14 +40,16 @@ en:
       home_content: "This is a home page for the Rails Tutorial"
     help:
       help_title: "Help"
-      link_message_html: 'Rails tutorial help
-      <a href="https://www.railstutorial.org/help">Ruby on Rails</a>,
-      and <a href="#">google.com</a>'
+      link_message_html: "Rails tutorial help
+      %{link_help} and %{link_google}"
+      help_href: "Ruby on Rails"
+      google_href: "google.com"
     about:
       about_title: "About"
       about_content: "We are human"
     contact:
       contact_title: "Contact"
-      contact_content_html: '
-      Contact the Ruby on Rails Tutorial about the sample app at the
-      <a href="https://www.railstutorial.org/contact"> contact page</a>.'
+      contact_content_html: "
+      Contact the Ruby on Rails Tutorial about the sample app
+      at the %{link_contact}"
+      contact_href: "contact page"

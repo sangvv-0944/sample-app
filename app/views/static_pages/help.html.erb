@@ -1,3 +1,8 @@
 <% provide(:title, t(".help_title")) %>
 <h1><%= t(".help_title") %></h1>
-<p><%= t(".link_message_html") %></p>
+<p>
+  <%= t(".link_message_html",
+    link_help: link_to(t(".help_href"), "https://www.railstutorial.org/help"),
+    link_google: link_to(t(".google_href"), "https://google.com"))
+  %>
+</p>
