@@ -7,7 +7,7 @@
         <%= @user.name %>
       </h1>
       <ul>
-        <li> <%= t("profile_page.email_info", email_user: @user.email) %></li>
+        <li><%= t("profile_page.email_info", email_user: @user.email) %></li>
         <li><%= t("profile_page.joined_date", joined_date: l(@user.created_at)) %> </li>
       </ul>
     </section>

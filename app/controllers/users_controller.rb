@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       log_in @user
-      flash[:success] = I18n.t("static_pages.home.home_heading")
+      flash[:success] = t "static_pages.home.home_heading"
       redirect_to @user
     else
       render :new
@@ -20,6 +20,7 @@ class UsersController < ApplicationController
   end
 
   private
+
   def user_params
     params.require(:user)
           .permit :name, :email, :password, :password_confirmation
