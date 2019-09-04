@@ -33,6 +33,11 @@ en:
   hello: "Hello world"
   title_web: "Ruby on Rails Tutorial Sample App"
   title_logo: "Sample app"
+  time:
+    formats:
+      default: "%d-%m-%Y"
+      long: "%d %B, %Y"
+      short: "%d %b"
   header:
     home: "Home"
     help: "Help"
@@ -69,3 +74,11 @@ en:
   signup_page:
     title: "Sign up"
     signup_content: "This will be a signup page for new users"
+    button_create: "Create my account"
+    lable_comfirm: "Confirmation"
+  error_count:
+    one: "The form contains %{count} error"
+    other: "The form contains %{count} errors"
+  profile_page:
+    email_info: "Email: %{email_user}"
+    joined_date: "Joined date: %{joined_date}"
