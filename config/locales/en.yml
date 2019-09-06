@@ -91,3 +91,8 @@ en:
   signin_page:
     question_text: "New user?"
     fail_account: "Invalid email/password combination"
+    content_button: "Create my account"
+  signin_page:
+    question_text: "New user?"
+    fail_account: "Invalid email/password combination"
+    remember_me: "Remember me on this computer"
