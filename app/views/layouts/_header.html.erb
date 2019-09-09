@@ -6,14 +6,17 @@
         <li><%= link_to t("header.home"), root_path %></li>
         <li><%= link_to t("header.help"), help_path %></li>
         <% if logged_in? %>
-          <li><%= link_to t("header.dropdown.user"), "#" %></li>
+          <li><%= link_to t("header.dropdown.user"), users_path %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <%= t("header.dropdown.account") %> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
               <li><%= link_to t("header.dropdown.profile"), current_user %></li>
-              <li><%= link_to t("header.dropdown.setting"), "#" %></li>
+              <li>
+                <%= link_to t("header.dropdown.setting"),
+                edit_user_path(current_user) %>
+              </li>
               <li class="divider"></li>
               <li>
                 <%= link_to t("header.dropdown.logout"), logout_path, method: :delete %>
