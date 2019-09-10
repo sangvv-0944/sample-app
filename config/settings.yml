@@ -5,3 +5,4 @@ avatar_size: 80
 avatar_size_min: 50
 remember_me: "1"
 per_page_user: 20
+hour_expried_reset: 2

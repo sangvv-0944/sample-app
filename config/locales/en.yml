@@ -121,9 +121,12 @@ en:
   user_mailer:
     hi_message: "Hi %{user_name}"
     activate_account: "Welcome to the Sample App! Click on the link below to
-      activate your account:"
+    activate your account:"
     activate: "Activate"
-    password_reset: "Password reset"
+    reset_pass: "Password reset"
+    pass_reset_content: "To reset your password click on the link below:"
+    content_reset: "Reset password"
+    time_expried: "This link will expire in two hours."
   micropost_page:
     posted_create: "Micropost created!"
     posted_delete: "Micropost deleted"
@@ -134,3 +137,4 @@ en:
   button_app:
     submit: "Submit"
     delete: "Delete"
+    update_pass: "Update password"
