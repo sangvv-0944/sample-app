@@ -1,0 +1,23 @@
+first:
+  content: "Hello this is fist micro"
+  created_at: <%= 10.minutes.ago.to_datetime %>
+  user: sangvo
+second:
+  content: "My content second bus"
+  created_at: <%= 3.years.ago.to_datetime %>
+  user: sangvo
+third:
+  content: "Third this conent ac"
+  created_at: <%= 2.hours.ago.to_datetime %>
+  user: sangvo
+most_recent:
+  content: "The recent micropost"
+  created_at: <%= Time.now %>
+  user: sangvo
+
+<% 30.times do |n| %>
+micropost_<%= n %>:
+  content: <%= Faker::Lorem.sentence(5) %>
+  created_at: <%= 42.days.ago.to_datetime %>
+  user: sangvo
+<% end %>

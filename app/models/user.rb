@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   attr_accessor :remember_token, :activation_token, :reset_token
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true, length: {maximum: Settings.max_name}
   validates :email, format: {with: VALID_EMAIL_REGEX},
             presence: true, length: {maximum: Settings.max_email},
@@ -67,6 +69,10 @@ class User < ApplicationRecord
   # forget remmeber token
   def forget
     update_attribute(:remember_digest, nil)
+  end
+
+  def feed
+    Micropost.find_user_id id
   end
 
   private
