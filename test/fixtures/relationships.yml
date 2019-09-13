@@ -1,0 +1,15 @@
+one:
+  follower: sangvo
+  followed: lana
+
+two:
+  follower: sangvo
+  followed: kendy
+
+three:
+  follower: lana
+  followed: kendy
+
+four:
+  follower: archer
+  followed: sangvo

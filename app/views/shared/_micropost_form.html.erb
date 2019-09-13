@@ -1,14 +1,17 @@
 <%= form_for(@micropost) do |f| %>
   <%= render "shared/error_messages",object: f.object %>
   <div class="field">
-    <%= f.text_area :content, placeholder: t("micropost_page.placeholder_post"),
+    <p>
+      <%= f.text_area :content, placeholder: t("micropost_page.placeholder_post"),
       class: "form-control" %>
+    </p>
   </div>
   <p>
   <%= f.submit t("micropost_page.post"), class: "btn btn-primary" %>
   </p>
   <span>
-    <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png',
+    <%= f.file_field :picture, accept: Settings.extention_img_allow,
       class: "form-control" %>
   </span>
 <% end %>
+

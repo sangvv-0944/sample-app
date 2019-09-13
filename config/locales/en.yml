@@ -106,6 +106,7 @@ en:
     href_gravatar: "http://gravatar.com/emails"
     profile_updated: "Profile updated"
     user_notfound: "User not found"
+    delete_success: "User deleted"
   users_page:
     title: "All users"
     delete_message: "User deleted"
@@ -145,14 +146,15 @@ en:
   count_micropost:
     one: "%{count} micropost"
     other: "%{count} microposts"
+  invalid_file:
+    message_file_max: "Maximum file size is 5MB. Please choose a smaller file"
   follow_page:
     no_post: "No micropost yet!"
   button_app:
     submit: "Submit"
     delete: "Delete"
     update_pass: "Update password"
-  invalid_file:
-    message_file_max: "Maximum file size is 5MB. Please choose a smaller file"
-  button_app:
-    submit: "Submit"
-    delete: "Delete"
+    follow: "Follow"
+    unfollow: "Unfollow"
+    folowing: "following"
+    followers: "followers"

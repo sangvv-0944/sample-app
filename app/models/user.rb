@@ -5,6 +5,14 @@ class User < ApplicationRecord
 
   has_many :microposts, dependent: :destroy
 
+  has_many :active_relationships, class_name: Relationship.name,
+            foreign_key: :follower_id, dependent: :destroy
+  has_many :following, through: :active_relationships, source: :followed
+
+  has_many :passive_relationships, class_name: Relationship.name,
+            foreign_key: :followed_id, dependent: :destroy
+  has_many :followers, through: :passive_relationships, source: :follower
+
   validates :name, presence: true, length: {maximum: Settings.max_name}
   validates :email, format: {with: VALID_EMAIL_REGEX},
             presence: true, length: {maximum: Settings.max_email},
@@ -72,7 +80,24 @@ class User < ApplicationRecord
   end
 
   def feed
-    Micropost.find_user_id id
+    following_ids = Relationship.followings_id(id).pluck("followed_id")
+    following_ids << id
+    Micropost.user_feed following_ids
+  end
+
+  # follow a user
+  def follow other_user
+    following << other_user
+  end
+
+  # unfollow
+  def unfollow other_user
+    following.delete other_user
+  end
+
+  # check folow
+  def following? other_user
+    following.include?(other_user)
   end
 
   private
