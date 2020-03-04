@@ -18,7 +18,7 @@ gem "jbuilder", "~> 2.5"
 gem "jquery-rails"
 gem "mini_magick", "4.7.0"
 gem "mysql2", ">= 0.3.18", "< 0.6.0"
-gem "puma", "~> 3.7"
+gem "puma", "~> 3.12"
 gem "rails", "~> 5.1.7"
 gem "rb-readline"
 gem "rubocop", "~> 0.54.0", require: false
